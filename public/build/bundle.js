@@ -410,7 +410,7 @@ var app = (function () {
     			if (!src_url_equal(img.src, img_src_value = "./assets/check.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "check");
     			attr_dev(img, "class", "svelte-8e2nrk");
-    			add_location(img, file, 64, 10, 1610);
+    			add_location(img, file, 64, 10, 1613);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
@@ -468,13 +468,13 @@ var app = (function () {
     			t3 = space();
     			attr_dev(p, "class", "svelte-8e2nrk");
     			toggle_class(p, "checked", /*todo*/ ctx[7].checked);
-    			add_location(p, file, 61, 8, 1456);
+    			add_location(p, file, 61, 8, 1459);
     			if (!src_url_equal(img.src, img_src_value = "./assets/remove.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "remove");
     			attr_dev(img, "class", "svelte-8e2nrk");
-    			add_location(img, file, 71, 8, 1831);
+    			add_location(img, file, 71, 8, 1834);
     			attr_dev(div, "class", "todo svelte-8e2nrk");
-    			add_location(div, file, 60, 6, 1429);
+    			add_location(div, file, 60, 6, 1432);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -567,9 +567,9 @@ var app = (function () {
     			option0 = element("option");
     			option0.textContent = "All";
     			option1 = element("option");
-    			option1.textContent = "Done";
+    			option1.textContent = "Completed";
     			option2 = element("option");
-    			option2.textContent = "Note Done";
+    			option2.textContent = "Pending";
     			t6 = space();
     			div0 = element("div");
 
@@ -590,13 +590,13 @@ var app = (function () {
     			add_location(option1, file, 54, 6, 1251);
     			option2.__value = "note-done";
     			option2.value = option2.__value;
-    			add_location(option2, file, 55, 6, 1292);
+    			add_location(option2, file, 55, 6, 1297);
     			attr_dev(select, "class", "svelte-8e2nrk");
     			add_location(select, file, 52, 4, 1172);
     			attr_dev(form, "class", "svelte-8e2nrk");
     			add_location(form, file, 49, 2, 1068);
     			attr_dev(div0, "class", "todos svelte-8e2nrk");
-    			add_location(div0, file, 58, 2, 1363);
+    			add_location(div0, file, 58, 2, 1366);
     			attr_dev(div1, "class", "main svelte-8e2nrk");
     			add_location(div1, file, 47, 0, 1026);
     		},

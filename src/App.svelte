@@ -52,8 +52,8 @@
     <input type="text" />
     <select on:change={handleChange}>
       <option value="all">All</option>
-      <option value="done">Done</option>
-      <option value="note-done">Note Done</option>
+      <option value="done">Completed</option>
+      <option value="note-done">Pending</option>
     </select>
   </form>
   <div class="todos">
