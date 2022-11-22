@@ -49,8 +49,8 @@
   <h3>Todo List</h3>
   <form on:submit={handleSubmit}>
     <!-- svelte-ignore a11y-autofocus -->
-    <input type="text" id="" autofocus />
-    <select name="" id="" on:change={handleChange}>
+    <input type="text" />
+    <select on:change={handleChange}>
       <option value="all">All</option>
       <option value="done">Done</option>
       <option value="note-done">Note Done</option>

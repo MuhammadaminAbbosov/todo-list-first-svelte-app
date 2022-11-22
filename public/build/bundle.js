@@ -410,7 +410,7 @@ var app = (function () {
     			if (!src_url_equal(img.src, img_src_value = "./assets/check.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "check");
     			attr_dev(img, "class", "svelte-8e2nrk");
-    			add_location(img, file, 64, 10, 1640);
+    			add_location(img, file, 64, 10, 1610);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
@@ -468,13 +468,13 @@ var app = (function () {
     			t3 = space();
     			attr_dev(p, "class", "svelte-8e2nrk");
     			toggle_class(p, "checked", /*todo*/ ctx[7].checked);
-    			add_location(p, file, 61, 8, 1486);
+    			add_location(p, file, 61, 8, 1456);
     			if (!src_url_equal(img.src, img_src_value = "./assets/remove.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "remove");
     			attr_dev(img, "class", "svelte-8e2nrk");
-    			add_location(img, file, 71, 8, 1861);
+    			add_location(img, file, 71, 8, 1831);
     			attr_dev(div, "class", "todo svelte-8e2nrk");
-    			add_location(div, file, 60, 6, 1459);
+    			add_location(div, file, 60, 6, 1429);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -580,27 +580,23 @@ var app = (function () {
     			attr_dev(h3, "class", "svelte-8e2nrk");
     			add_location(h3, file, 48, 2, 1047);
     			attr_dev(input, "type", "text");
-    			attr_dev(input, "id", "");
-    			input.autofocus = true;
     			attr_dev(input, "class", "svelte-8e2nrk");
     			add_location(input, file, 51, 4, 1146);
     			option0.__value = "all";
     			option0.value = option0.__value;
-    			add_location(option0, file, 53, 6, 1242);
+    			add_location(option0, file, 53, 6, 1212);
     			option1.__value = "done";
     			option1.value = option1.__value;
-    			add_location(option1, file, 54, 6, 1281);
+    			add_location(option1, file, 54, 6, 1251);
     			option2.__value = "note-done";
     			option2.value = option2.__value;
-    			add_location(option2, file, 55, 6, 1322);
-    			attr_dev(select, "name", "");
-    			attr_dev(select, "id", "");
+    			add_location(option2, file, 55, 6, 1292);
     			attr_dev(select, "class", "svelte-8e2nrk");
-    			add_location(select, file, 52, 4, 1188);
+    			add_location(select, file, 52, 4, 1172);
     			attr_dev(form, "class", "svelte-8e2nrk");
     			add_location(form, file, 49, 2, 1068);
     			attr_dev(div0, "class", "todos svelte-8e2nrk");
-    			add_location(div0, file, 58, 2, 1393);
+    			add_location(div0, file, 58, 2, 1363);
     			attr_dev(div1, "class", "main svelte-8e2nrk");
     			add_location(div1, file, 47, 0, 1026);
     		},
@@ -624,8 +620,6 @@ var app = (function () {
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].m(div0, null);
     			}
-
-    			input.focus();
 
     			if (!mounted) {
     				dispose = [
