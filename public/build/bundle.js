@@ -397,7 +397,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (63:8) {#if !todo.checked}
+    // (64:8) {#if !todo.checked}
     function create_if_block(ctx) {
     	let img;
     	let img_src_value;
@@ -410,7 +410,7 @@ var app = (function () {
     			if (!src_url_equal(img.src, img_src_value = "./assets/check.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "check");
     			attr_dev(img, "class", "svelte-8e2nrk");
-    			add_location(img, file, 64, 10, 1613);
+    			add_location(img, file, 65, 10, 1637);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
@@ -434,14 +434,14 @@ var app = (function () {
     		block,
     		id: create_if_block.name,
     		type: "if",
-    		source: "(63:8) {#if !todo.checked}",
+    		source: "(64:8) {#if !todo.checked}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (60:4) {#each checkedTodos as todo, index}
+    // (61:4) {#each checkedTodos as todo, index}
     function create_each_block(ctx) {
     	let div;
     	let p;
@@ -468,13 +468,13 @@ var app = (function () {
     			t3 = space();
     			attr_dev(p, "class", "svelte-8e2nrk");
     			toggle_class(p, "checked", /*todo*/ ctx[7].checked);
-    			add_location(p, file, 61, 8, 1459);
+    			add_location(p, file, 62, 8, 1483);
     			if (!src_url_equal(img.src, img_src_value = "./assets/remove.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "remove");
     			attr_dev(img, "class", "svelte-8e2nrk");
-    			add_location(img, file, 71, 8, 1834);
+    			add_location(img, file, 72, 8, 1858);
     			attr_dev(div, "class", "todo svelte-8e2nrk");
-    			add_location(div, file, 60, 6, 1432);
+    			add_location(div, file, 61, 6, 1456);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -524,7 +524,7 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(60:4) {#each checkedTodos as todo, index}",
+    		source: "(61:4) {#each checkedTodos as todo, index}",
     		ctx
     	});
 
@@ -578,27 +578,27 @@ var app = (function () {
     			}
 
     			attr_dev(h3, "class", "svelte-8e2nrk");
-    			add_location(h3, file, 48, 2, 1047);
+    			add_location(h3, file, 49, 2, 1071);
     			attr_dev(input, "type", "text");
     			attr_dev(input, "class", "svelte-8e2nrk");
-    			add_location(input, file, 51, 4, 1146);
+    			add_location(input, file, 52, 4, 1170);
     			option0.__value = "all";
     			option0.value = option0.__value;
-    			add_location(option0, file, 53, 6, 1212);
+    			add_location(option0, file, 54, 6, 1236);
     			option1.__value = "done";
     			option1.value = option1.__value;
-    			add_location(option1, file, 54, 6, 1251);
+    			add_location(option1, file, 55, 6, 1275);
     			option2.__value = "note-done";
     			option2.value = option2.__value;
-    			add_location(option2, file, 55, 6, 1297);
+    			add_location(option2, file, 56, 6, 1321);
     			attr_dev(select, "class", "svelte-8e2nrk");
-    			add_location(select, file, 52, 4, 1172);
+    			add_location(select, file, 53, 4, 1196);
     			attr_dev(form, "class", "svelte-8e2nrk");
-    			add_location(form, file, 49, 2, 1068);
+    			add_location(form, file, 50, 2, 1092);
     			attr_dev(div0, "class", "todos svelte-8e2nrk");
-    			add_location(div0, file, 58, 2, 1366);
+    			add_location(div0, file, 59, 2, 1390);
     			attr_dev(div1, "class", "main svelte-8e2nrk");
-    			add_location(div1, file, 47, 0, 1026);
+    			add_location(div1, file, 48, 0, 1050);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -709,7 +709,8 @@ var app = (function () {
     	}
 
     	function handleRemove(id) {
-    		$$invalidate(0, checkedTodos = todos.filter((_, i) => i !== id));
+    		$$invalidate(5, todos = todos.filter((_, i) => i !== id));
+    		$$invalidate(0, checkedTodos = [...todos]);
     	}
 
     	function handleChange(e) {

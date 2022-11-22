@@ -28,7 +28,8 @@
   }
 
   function handleRemove(id) {
-    checkedTodos = todos.filter((_, i) => i !== id);
+    todos = todos.filter((_, i) => i !== id);
+    checkedTodos = [...todos];
   }
 
   function handleChange(e) {
