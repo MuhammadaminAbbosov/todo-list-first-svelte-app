@@ -158,4 +158,13 @@
       width: 300px;
     }
   }
+
+  @media (max-width: 500px) {
+    form input {
+      width: 250px;
+    }
+    .todo p {
+      width: 200px;
+    }
+  }
 </style>
