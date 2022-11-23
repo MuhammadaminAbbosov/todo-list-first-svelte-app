@@ -50,7 +50,7 @@
   <h3>Todo List</h3>
   <form on:submit={handleSubmit}>
     <!-- svelte-ignore a11y-autofocus -->
-    <input type="text" />
+    <input type="text" inputmode="search"/>
     <select on:change={handleChange}>
       <option value="all">All</option>
       <option value="done">Completed</option>
