@@ -397,7 +397,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (79:6) {:else}
+    // (79:4) {:else}
     function create_else_block(ctx) {
     	let p;
 
@@ -405,8 +405,8 @@ var app = (function () {
     		c: function create() {
     			p = element("p");
     			p.textContent = "Plase Enter todo.";
-    			attr_dev(p, "class", "empty svelte-177mm2a");
-    			add_location(p, file, 79, 6, 2018);
+    			attr_dev(p, "class", "empty svelte-8hrg10");
+    			add_location(p, file, 79, 6, 2016);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -421,7 +421,7 @@ var app = (function () {
     		block,
     		id: create_else_block.name,
     		type: "else",
-    		source: "(79:6) {:else}",
+    		source: "(79:4) {:else}",
     		ctx
     	});
 
@@ -440,7 +440,7 @@ var app = (function () {
     			img = element("img");
     			if (!src_url_equal(img.src, img_src_value = "./assets/check.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "check");
-    			attr_dev(img, "class", "svelte-177mm2a");
+    			attr_dev(img, "class", "svelte-8hrg10");
     			add_location(img, file, 65, 10, 1637);
     		},
     		m: function mount(target, anchor) {
@@ -497,14 +497,14 @@ var app = (function () {
     			t2 = space();
     			img = element("img");
     			t3 = space();
-    			attr_dev(p, "class", "svelte-177mm2a");
+    			attr_dev(p, "class", "svelte-8hrg10");
     			toggle_class(p, "checked", /*todo*/ ctx[7].checked);
     			add_location(p, file, 62, 8, 1483);
     			if (!src_url_equal(img.src, img_src_value = "./assets/remove.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "remove");
-    			attr_dev(img, "class", "svelte-177mm2a");
+    			attr_dev(img, "class", "svelte-8hrg10");
     			add_location(img, file, 72, 8, 1858);
-    			attr_dev(div, "class", "todo svelte-177mm2a");
+    			attr_dev(div, "class", "todo svelte-8hrg10");
     			add_location(div, file, 61, 6, 1456);
     		},
     		m: function mount(target, anchor) {
@@ -618,10 +618,10 @@ var app = (function () {
     				each_1_else.c();
     			}
 
-    			attr_dev(h3, "class", "svelte-177mm2a");
+    			attr_dev(h3, "class", "svelte-8hrg10");
     			add_location(h3, file, 49, 2, 1071);
     			attr_dev(input, "type", "text");
-    			attr_dev(input, "class", "svelte-177mm2a");
+    			attr_dev(input, "class", "svelte-8hrg10");
     			add_location(input, file, 52, 4, 1170);
     			option0.__value = "all";
     			option0.value = option0.__value;
@@ -632,13 +632,13 @@ var app = (function () {
     			option2.__value = "note-done";
     			option2.value = option2.__value;
     			add_location(option2, file, 56, 6, 1321);
-    			attr_dev(select, "class", "svelte-177mm2a");
+    			attr_dev(select, "class", "svelte-8hrg10");
     			add_location(select, file, 53, 4, 1196);
-    			attr_dev(form, "class", "svelte-177mm2a");
+    			attr_dev(form, "class", "svelte-8hrg10");
     			add_location(form, file, 50, 2, 1092);
-    			attr_dev(div0, "class", "todos svelte-177mm2a");
+    			attr_dev(div0, "class", "todos svelte-8hrg10");
     			add_location(div0, file, 59, 2, 1390);
-    			attr_dev(div1, "class", "main svelte-177mm2a");
+    			attr_dev(div1, "class", "main svelte-8hrg10");
     			add_location(div1, file, 48, 0, 1050);
     		},
     		l: function claim(nodes) {
