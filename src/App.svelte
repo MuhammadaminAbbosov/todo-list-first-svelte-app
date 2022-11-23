@@ -76,6 +76,8 @@
           on:click={handleRemove.bind(this, index)}
         />
       </div>
+      {:else}
+      <p class="empty">Plase Enter todo.</p>
     {/each}
   </div>
 </div>
@@ -141,5 +143,10 @@
   .todo img {
     width: 40px;
     cursor: pointer;
+  }
+  .empty {
+    color: rgb(255, 179, 160);
+    font-size: 18px;
+    font-style: italic;
   }
 </style>
